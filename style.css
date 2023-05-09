@@ -14,7 +14,6 @@
 
 body{
     min-height: 100vh;
-    min-width: 100vw;
     background-image: linear-gradient(45deg, var(--cor3), transparent);
     position: relative;
 }
@@ -26,10 +25,10 @@ main{
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.301);
     padding: 20px;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 800px;
+    max-height: 100vh;
     border-radius: 15px;
-    font-size: 2em;
+    font-size: 1.5em;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.329);
 }
 
@@ -111,3 +110,21 @@ label{
     margin-bottom: 20px;
 
 }
+@media only screen and (max-width: 400){
+    main{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 700px){
+    main{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    main{
+        font-size: 20px;
+    }
+}
+
+@media
