@@ -10,30 +10,40 @@ function calcular_imc(){
 
    const exibirIMC = document.getElementById('resultado_imc');
 
-   if(imc < 18.5){
-   exibirIMC.innerHTML = (imc + ' | Você está abaixo do peso');
-
-   }
-   else if(imc >= 18.6 && imc <= 24.9){
-      exibirIMC.innerHTML = (imc + ' | Você está no peso ideal');
-
-   }
-   else if(imc >= 25 && imc <= 29.9){
-      exibirIMC.innerHTML = (imc + ' | Você está levemente acima do peso');
-
-   }
-   else if(imc >= 30 && imc <= 34.9){
-      exibirIMC.innerHTML = (imc + ' | Você está com Obesidade de Grau I <p>Procure se exercitar</p>');
-
-   }
-   else if(imc >= 35 && imc<= 39.9){
-      exibirIMC.innerHTML = (imc + ' | Você está com Obesidade de Grau II (Severa) <p>Procure se exercitar</p>');
+   if(!peso.value || !altura.value){
+      alert('Por favor insira o seu peso e sua altura');
    }
    else{
-      exibirIMC.innerHTML = (imc + ' | Você está com Obesidade de Grau III (Mórbida) <p>Procure um médico</p>');
-   
+      if(imc <= 18.5){
+      exibirIMC.innerHTML = (imc + ' | Você está abaixo do peso');
+      exibirIMC.style.color = 'yellow';
+
+      }
+      else if(imc >= 18.6 && imc <= 24.9){
+         exibirIMC.innerHTML = (imc + ' | Você está no peso ideal');
+         exibirIMC.style.color = 'green';
+
+      }
+      else if(imc >= 25 && imc <= 29.9){
+         exibirIMC.innerHTML = (imc + ' | Você está levemente acima do peso');
+         exibirIMC.style.color = 'white';
+
+      }
+      else if(imc >= 30 && imc <= 34.9){
+         exibirIMC.innerHTML = (imc + ' | Você está com Obesidade de Grau I');
+         exibirIMC.style.color = 'white';
+
+      }
+      else if(imc >= 35 && imc<= 39.9){
+         exibirIMC.innerHTML = (imc + ' | Você está com Obesidade de Grau II (Severa)');
+         exibirIMC.style.color = 'red';
+      }
+      else{
+         exibirIMC.innerHTML = (imc + ' | Você está com Obesidade de Grau III (Mórbida)');
+         exibirIMC.style.color = 'darkred';
+      }
    }
-}
+}   
 
 
 let reset = document.getElementById('reset');

@@ -17,7 +17,6 @@ body{
     width: 100vw;
     background-image: linear-gradient(45deg, var(--cor3), transparent);
     position: relative;
-    text-align: center;
 }
 
 main{
@@ -25,11 +24,12 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.226);
+    background-color: rgba(0, 0, 0, 0.301);
     padding: 20px;
     width: 1000px;
     border-radius: 15px;
     font-size: 2em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.329);
 }
 
 h1{
@@ -39,6 +39,7 @@ h1{
     color: var(--cor1);
     font-weight: bolder;
     font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
 p{
@@ -46,4 +47,65 @@ p{
     font-size: 1em;
     font-weight: bold;
     
+}
+
+input{
+    padding: 10px;
+    font-size: .8em;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.411);
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.432);
+}
+input:hover{
+    background-color: white;
+    border-radius: 10px;
+    transition: .6s;
+  
+   
+}
+
+#peso{
+    margin-top: 10px;
+    width: 200px;
+}
+
+#altura{
+    width: 127px;
+}
+.div_btn{
+    text-align: center;
+}
+button{
+    font-size: 1em;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    color: var(--cor1);
+    color: darora
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.493);
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.288);
+    transition: .4s;
+}
+
+.section_two{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+label{
+    text-align: left;
+    color: var(--cor1);
+}
+  
+.title_result{
+    text-align: center;
+
 }
