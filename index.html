@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Calculadora IMC</title>
 </head>
 <body>
@@ -14,10 +15,9 @@
         <main class="container">
             <section class="section_one">
                 <h1>Calculadora de Índice de Massa Corporal | IMC</h1>
-                Digite seu peso (KG): 
-                <input type="number" id="peso" name="peso" value="" placeholder="Ex.: 80" required><br>
+                <p>Digite seu peso (KG): <input type="number" id="peso" name="peso" value="" placeholder="Ex.: 80" required></p><br>
 
-                Digite qual sua altura (M): <input type="number" name="altura" id="altura" value="" placeholder="Ex.: 1,80" required><br>
+                <p>Digite qual sua altura (M): <input type="number" name="altura" id="altura" value="" placeholder="Ex.: 1,80" required></p><br>
 
                 <button type="submit" onclick="calcular_imc()">Calcular</button>
                 <button type="reset" id="reset" onclick="reset()">Apagar</button>
