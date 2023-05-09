@@ -13,8 +13,8 @@
 }
 
 body{
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
     background-image: linear-gradient(45deg, var(--cor3), transparent);
     position: relative;
 }
