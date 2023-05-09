@@ -15,18 +15,18 @@
             <section class="section_one">
                 <h1>Calculadora de Índice de Massa Corporal | IMC</h1>
                 Digite seu peso (KG): 
-                <input type="number" id="peso" name="peso" value="" placeholder="Ex.: 80"><br>
+                <input type="number" id="peso" name="peso" value="" placeholder="Ex.: 80" required><br>
 
-                Digite qual sua altura (M): <input type="number" name="altura" id="altura" value="" placeholder="Ex.: 1,80"><br>
+                Digite qual sua altura (M): <input type="number" name="altura" id="altura" value="" placeholder="Ex.: 1,80" required><br>
 
                 <button type="submit" onclick="calcular_imc()">Calcular</button>
+                <button type="reset" id="reset" onclick="reset()">Apagar</button>
 
             </section>
             <section class="section_two">
-                <h2>Resultado</h2>
-                O seu IMC é: <input type="text" id="valorFinal"><br>
-                
-                Sua classificação está em: <input type="text" name="classificação" id="classificação">
+                <h2 class="title_result">Resultado</h2>
+                <p class="result">Seu IMC é:</p><br> 
+                <label for="" id="resultado_imc" class="result"></label>
             </section>
 
 
